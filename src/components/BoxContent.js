@@ -42,6 +42,20 @@ color: "#000000"
 }
 
 
+
+
+
+const time ={
+    fontFamily: "Roboto",
+fontStyle: "normal",
+fontWeight: "300",
+fontSize: "12px",
+lineHeight: "23px",
+letterSpacing: "0.1em",
+color:"#1D99D6"
+
+}
+
 function BoxContent() {
     return (
         <div>
