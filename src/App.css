@@ -15,6 +15,15 @@ body{
   }
 }
 
+
+.file{
+  left:172px;
+}
+
+.file:hover{
+  left:52px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

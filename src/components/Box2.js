@@ -9,7 +9,7 @@ const box={
     background: "#FFFFFF",
     boxShadow: "0px 4px 27px rgba(0, 0, 0, 0.25)",
     borderRadius: "10px",
-    zIndex:"1",
+    zIndex:"10",
     }
     const content={
         position: "absolute",

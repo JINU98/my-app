@@ -1,6 +1,8 @@
-import React from 'react';
+import React,{ useState,useRef } from 'react';
 import Plus from '../Vector (2).png';
 import BoxContent from './BoxContent';
+
+
 
 const box={
     position: "absolute",
@@ -11,7 +13,7 @@ const box={
     background: "#FFFFFF",
     boxShadow: "0px 4px 27px rgba(0, 0, 0, 0.25)",
     borderRadius: "10px",
-    zIndex:"2"
+    zIndex:"12"
     }
 
     const appoin={
@@ -66,10 +68,18 @@ const text ={
 
 
 function Box() {
+    const initial=useRef(null);
+
+    const onButtonClick = () => {
+        // `current` points to the mounted text input element
+        initial.style.zIndex = "1";
+      };
+    
+
     return (
-        <div style={box}>
+        <div ref={initial} style={box}>
             <span style={appoin}>Appointments</span>
-            <button style={appoint} class="btn"><img style={ {position:"absolute",top:"3px",left:"10px"} } src={Plus} height="20px" ></img> 
+            <button id="neww" onClick={onButtonClick} style={appoint} class="btn"><img style={ {position:"absolute",top:"3px",left:"10px"} } src={Plus} height="20px" ></img> 
             <div style={text}> new appointment </div> 
             </button>
             <BoxContent />

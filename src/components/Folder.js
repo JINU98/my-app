@@ -4,7 +4,7 @@ const files={
 position: "absolute",
 width: "280px",
 height: "320px",
-left: "52px",
+// left: "172px",
 top: "200px",
 
 /* Logo base colour */
@@ -77,7 +77,7 @@ height:"50px",
 function Folder() {
     return (
         <>
-        <div style={files}>
+        <div className="file" style={files}>
         <div style={ div1 }>
    
    <i class="fa fa-calendar" style={icon1} aria-hidden="true"></i>
